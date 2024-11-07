@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Div Page Sample</title>
+	<style>
+
+		html,body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		font-family: arial, sans-serif;
+		}
+	.images,
+	.product{
+		height: 300px;
+		width: auto;
+		text-align: center;
+		display: inline-block;
+		margin: 20px;
+		}
+
+
+		.container{
+			display: flex;
+			flex-direction: Column;
+			height: 100vh;
+		}
+		.header {
+			background-color: darkred;
+			color: antiquewhite;
+			padding: 20px;
+			text-align: center;
+			font-size: 24px;
+			flex-shrink: 0;
+		}
+		.main{
+			display: flex;
+			flex-grow: 1;
+
+		}
+		.sidebar{
+			width: 25%;
+			background-color: darkgray;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.main-content{
+			flex-grow: 1;
+			background-color: silver;
+			padding: 20px;
+			overflow-y: auto;
+		}
+		.form-section{
+			margin-top: 20px;
+			padding: 15px;
+			background-color: darkred;
+			border: 1px dimgray;
+			border-radius: 10px;
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h3>Disco's Guitar shop</h3>
+			</div>
+				<div class="main">
+					<div class="sidebar"> 
+		<h3>Types Of Guitars</h3>
+		<p>Guitars are versatile string instruments that have captivated musicians and audiences for centuries. They come in various forms, each with its unique sound and characteristics. The main types include:
+
+Acoustic Guitars: These instruments are known for their hollow bodies that amplify sound naturally. They come in different shapes and sizes, producing rich tones suitable for genres like folk, country, and classical.
+
+Electric Guitars: Utilizing electronic pickups, electric guitars convert string vibrations into electrical signals, allowing for a wide range of sounds and effects. They're the backbone of rock, blues, jazz, and pop music, offering musicians endless creative possibilities.
+
+Ukuleles: Smaller and typically with four nylon or gut strings, ukuleles are celebrated for their bright, cheerful sound. They have gained popularity in various music styles, especially in Hawaiian and contemporary pop music.
+Regardless of type, guitars share a common purpose: to create music that resonates with people. From strumming simple chords to intricate solos, the guitar is an instrument of expression, connecting musicians and listeners through its captivating sound. Whether you're just starting or a seasoned player, there's always something new to explore in the world of guitars!</p>
+	</div>
+	<div class="main-content">
+		<h3>Intro</h3>
+		<p>
+Welcome to Disco's Guitar Shop, where the rhythm of music meets the magic of melody! Step inside our vibrant space filled with an extensive range of electric, acoustic, and bass guitars that cater to every player, from beginners to seasoned pros.
+
+At Disco's, you'll find a handpicked selection of instruments from renowned brands alongside unique, one-of-a-kind pieces. Our passionate staff is always on hand to share their expertise, helping you find the perfect guitar or accessory to elevate your sound.
+
+Join us for exciting events, including workshops, live performances, and jam sessions that celebrate the joy of playing. Whether you're here to shop, learn, or connect with fellow musicians, Disco's Guitar Shop is your ultimate destination for all things guitar. Let's make some noise together!</p>
+
+		
+		<div class="form-section">
+
+			   <div class="product">
+	<h2>Our Products</h2>
+    <div class="product">
+      <img src="product1.jpg" class="product">
+      <h3>Ukelele</h3>
+      <p>
+A small, four-stringed instrument originating from Hawaii, the ukulele is known for its bright, cheerful sound and is typically played in a variety of musical genres, especially folk and pop.</p>
+      <p>Price: $60</p>
+       <input type="radio" id="radio6" name="radio" value="cart"> Add to Cart <br>
+
+		<div class="product">
+      <img src="product2.jpg" class="product">
+      <h3>Acoustic Guitar</h3>
+      <p>A six-stringed instrument that produces sound through its hollow body without electronic amplification. Acoustic guitars are versatile and commonly used in various styles, from folk to rock.</p>
+      <p>$100</p>
+       <input type="radio" id="radio5" name="radio" value="cart"> Add to Cart <br>
+
+    <div class="product">
+      <img src="product3.jpg" class="product">
+      <h3>Electric Guitar (Stratocaster)</h3>
+      <p>A six-stringed instrument that uses electromagnetic pickups to convert string vibrations into electrical signals, which are then amplified. Electric guitars are widely used in rock, jazz, blues, and many other genres, allowing for a diverse range of sounds and effects.</p>
+      <p>Price: $250</p>
+      <input type="radio" id="radio4" name="radio" value="cart"> Add to Cart <br> <br>
+    
+			<form>
+
+		<label for="search">Name:</label>
+		<input type="search" id="search" name="search"> <br>
+		
+		<label for="text">Enter Email:</label>
+		<input type="text" id="text" name="text"> <br>
+
+		<label for="email">Enter Address:</label>
+		<input type="email" id="email" name="email"><br> <br>
+
+
+		<label>Payment Method</label> <br>
+		<input type="radio" id="radio1" name="radio" value="cash"> Debit/Credit
+		<input type="radio" id="radio2" name="radio" value="cash"> Bank Transfer
+		<input type="radio" id="radio3" name="radio" value="cash"> Cash
+		<br> <br>
+
+		
+	
+
+
+		</select>
+
+		
+		<input type="submit"value="Check Out">
+		
+		</form>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+</body>
+</html>
